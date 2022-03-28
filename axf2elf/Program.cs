@@ -198,9 +198,9 @@ namespace axf2elf
 
             // === convert axf to elf ===
 
-            log("objcopy.exe " + command_line + "\r\n");
+            log("arm-none-eabi-objcopy " + command_line + "\r\n");
 
-            eCode = runExe("objcopy.exe", command_line, out string output_log);
+            eCode = runExe("arm-none-eabi-objcopy", command_line, out string output_log);
 
             log(output_log);
 
